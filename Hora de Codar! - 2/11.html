@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 11</title>
+
+    <script>
+
+    var valor1 = prompt("Insira o primeiro valor inteiro, abaixo:");
+    valor1 = Number(valor1);
+
+    var valor2 = prompt("Insira o segundo valor inteiro, abaixo:");
+    valor2 = Number(valor2);
+
+    var operacao = parseInt(prompt("Escolha qual operação deve ser feita: 1.Adição 2.Subtração 3.Divisão 4.Multiplicação"));
+
+    var adicao = ((valor1 + valor2));
+    adicao = Number(adicao);
+
+    var subtracao = ((valor1 - valor2));
+    subtracao = Number(subtracao);
+
+    var divisao = ((valor1 / valor2));
+    divisao = Number(divisao);
+
+    var multiplicacao = ((valor1 * valor2));
+    multiplicacao = Number(multiplicacao);
+
+    if (operacao === 1) {
+        alert("O resultado é: " + adicao);
+    } else if (operacao === 2) {
+        alert("O resutado é: " + subtracao);
+    } else if (operacao === 3) {
+        alert("O resultado é: " + divisao);
+    } else if (operacao === 4) {
+        alert("O resultado é: " + multiplicacao);
+    }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

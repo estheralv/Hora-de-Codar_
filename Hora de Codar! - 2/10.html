@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 10</title>
+
+    <script>
+
+    var altura = prompt("Insira sua altura, abaixo: (Exemplo: 1.60)");
+    altura = Number(altura);
+
+    var sexo = parseInt(prompt("Informe seu sexo: 1.Feminino 2.Masculino"));
+
+    var peso_fem = ((62.1 * altura) - 44.7);
+    peso_fem = Number(peso_fem);
+
+    var peso_masc = ((72.7 * altura) - 58);
+    peso_masc = Number(peso_masc);
+
+    if (sexo === 1) {
+        alert("Seu peso ideal é: " + peso_fem);
+    } else if (sexo === 2) {
+        alert("Seu peso ideal é: " + peso_masc);
+    }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

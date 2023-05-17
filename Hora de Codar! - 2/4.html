@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 4</title>
+
+    <script>
+
+        var valor1 = prompt("Insira o primeiro valor, abaixo:");
+        valor1 = Number(valor1);
+
+        var valor2 = prompt("Insira o segundo valor, abaixo:");
+        valor2 = Number(valor2);
+
+        var valor3 = prompt("Insira o terceiro valor, abaixo:");
+        valor3 = Number(valor3);
+
+        var menor_valor;
+        menor_valor = Number(menor_valor);
+
+        if (valor1 < valor2 && valor1 < valor3) {
+            menor_valor = valor1;
+            alert("A soma dos dois maiores números é, " + (valor2 + valor3));
+        } else if (valor2 < valor1 && valor2 < valor3) {
+            menor_valor = valor2;
+            alert("A soma dos dois maiores números é, " + (valor1 + valor3));
+        } else if (valor3 < valor1 && valor3 < valor2) {
+            menor_valor = valor3;
+            alert("A soma dos dois maiores números é, " + (valor1 + valor2));
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 8</title>
+
+    <script>
+
+    var valor1 = prompt("Insira o primeiro valor, abaixo:");
+    valor1 = Number(valor1);
+
+    var valor2 = prompt("Insira o segundo valor, abaixo:");
+    valor2 = Number(valor2);
+
+    var valor3 = prompt("Insira o terceiro valor, abaixo:");
+    valor3 = Number(valor3);
+
+    var valor4 = prompt("Insira o quarto valor, abaixo:");
+    valor4 = Number(valor4);
+
+    if (valor1 < 10) {
+        valor1 = valor1;
+    } else {
+        valor1 = 0;
+    }
+
+    if (valor2 < 10) {
+        valor2 = valor2;
+    } else {
+        valor2 = 0;
+    }
+
+    if (valor3 < 10) {
+        valor3 = valor3;
+    } else {
+        valor3 = 0;
+    }
+
+    if (valor4 < 10) {
+        valor4 = valor4;
+    } else {
+        valor4 = 0;
+    }
+
+    var media = ((valor1 + valor2 + valor3 + valor4) / 4);
+
+    if (media > 5) {
+        alert("A média é: " + media + ". Parabéns você passou no teste!");
+    } else {
+        alert("A média é: " + media + ". Sinto muito, tente novamente.");
+    }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
