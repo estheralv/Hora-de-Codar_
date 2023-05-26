@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 7</title>
+
+    <script>
+         
+    const notas = [];
+    const num_notas = 6;
+
+    function lerNota() {
+        const nota = parseFloat(prompt(`Insira a nota ${notas.length + 1}, abaixo:`));
+
+        if (nota < 0 || nota > 10 || isNaN(nota)) {
+            alert('Valor inválido! Insira uma nota entre 0 e 10.');
+            lerNota();
+        } else {
+            notas.push(nota);
+        }
+    }
+
+    for (let i = 0; i < num_notas; i++) {
+        lerNota();
+    }
+
+    if (notas.length > 0) {
+        const media = notas.reduce((acc, nota) => acc + nota, 0) / notas.length;
+        alert(`A média do aluno é: ${media.toFixed(2)}`);
+    } else {
+        alert('Nenhuma nota válida foi inserida.');
+    }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

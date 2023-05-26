@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 11</title>
+
+    <script>
+
+    var valores = [];
+    var dentroIntervalo = 0;
+    var foraIntervalo = 0;
+
+    for (var i = 0; i < 10; i++) {
+        var valor = parseInt(prompt("Informe um valor:"));
+        valores.push(valor);
+        if (valor >= 24 && valor <= 42) {
+            dentroIntervalo++;
+        } else {
+            foraIntervalo++;
+        }
+    }
+
+    alert("Valores dentro do intervalo: " + dentroIntervalo);
+    alert("Valores fora do intervalo: " + foraIntervalo);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
